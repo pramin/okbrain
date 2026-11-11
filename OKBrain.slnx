@@ -1,0 +1,9 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/OKBrain.Tool/OKBrain.Tool.csproj" />
+    <Project Path="src/OKBrain.Core/OKBrain.Core.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/OKBrain.Tests/OKBrain.Tests.csproj" />
+  </Folder>
+</Solution>

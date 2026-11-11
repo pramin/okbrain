@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <PackAsTool>true</PackAsTool>
+    <ToolCommandName>okbrain</ToolCommandName>
+    <PackageId>OKBrain</PackageId>
+    <Version>0.1.0</Version>
+    <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
+    <Description>Tools for Open Knowledge Format bundles.</Description>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageProjectUrl>https://github.com/pramin/okbrain</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/pramin/okbrain</RepositoryUrl>
+    <PackageTags>okf;knowledge;markdown;mcp</PackageTags>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include="../../README.md" Pack="true" PackagePath="/" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="../OKBrain.Core/OKBrain.Core.csproj" />
+    <FrameworkReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="ModelContextProtocol.AspNetCore" Version="1.4.1" />
+  </ItemGroup>
+</Project>
